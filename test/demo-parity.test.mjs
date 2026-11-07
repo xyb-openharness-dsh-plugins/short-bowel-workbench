@@ -102,7 +102,7 @@ test('resources / primer 与唯一源一致（primer 唯一源为 primer-data.js
   const primerSrc = readFileSync(new URL('../prototypes/v0.2/primer-data.js', import.meta.url), 'utf8');
   const sandbox = vm.createContext({ window: {} });
   vm.runInContext(primerSrc, sandbox);
-  assert.deepEqual(data.primer, sandbox.window.DISEASE_PRIMER);
+  assert.deepEqual(data.primer, JSON.parse(JSON.stringify(sandbox.window.DISEASE_PRIMER))); /* 跨 realm 原型归一 */
   assert.equal(data.primer.sections.length, 4);
 });
 

@@ -59,7 +59,7 @@ for (const p of PAGES) {
 add('Q14-AI入口', aiChips >= 8, `全站 ai-link=${aiChips}`);
 const totalSubs = await page.evaluate(() => document ? null : null); // placeholder
 const expectedSubs = Object.values({ home: 2, archive: 3, nutrition: 4, labs: 3, onechart: 2, complications: 3, life: 3, visits: 3, resources: 1 }).reduce((a, b) => a + b, 0);
-add('IP2-孤儿页', subPagesVisited.size === expectedSubs, `visited=${subPagesVisited.size}/${expectedSubs}`);
+add('IP2-孤儿页', expectedSubs > 0 && subPagesVisited.size > 0 && subPagesVisited.size === expectedSubs, `visited=${subPagesVisited.size}/${expectedSubs}`);
 
 /* Q9/Q10 两套档案切换：数据条数不同 + 不串档 */
 const countsA = await page.evaluate(() => ({
@@ -78,9 +78,9 @@ add('Q9-两套档案', profileNow.includes('B') && countsB.inf > countsA.inf && 
 /* 不串档：B 下输液日历打点数 = B 登记数（月内） */
 await page.evaluate(() => { location.hash = 'nutrition/输液日历'; window.dispatchEvent(new Event('hashchange')); });
 await new Promise((r) => setTimeout(r, 120));
-const calTags = await page.$$eval('#cal-grid .tag.on', (n) => n.length);
+const calTags = await page.$$eval('#cal-grid .tag.on', (n) => n);
 const calExpect = await page.evaluate(() => window.DEMO.infusions.B.filter((v) => v.d && v.d.startsWith('2026-11')).length);
-add('Q10-切换不串档', calTags === calExpect && calExpect > 0, `cal tags=${calTags} expect=${calExpect}`);
+add('Q10-切换不串档', calTags.length > 0 && calExpect > 0 && calTags.length === calExpect, `cal tags=${calTags.length} expect=${calExpect}`);
 /* P0 回归：看板不得出现私密记录正文（filterPrivate 断言） */
 const dashText = await page.$eval('#main', (m) => m.textContent);
 const privText = await page.evaluate(() => window.DEMO.life.B.find((x) => x.visibility === 'private').text);

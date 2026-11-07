@@ -68,7 +68,7 @@ function sbsHits(hay) {
 const OFF_TOPIC_HINTS = [
   'melanoma', 'carcinoma', 'lymphoma', 'sarcoma', 'myeloma', 'leukemia', 'glioma', 'mesothelioma',
   'breast', 'lung', 'hepatocellular', 'gastric', 'colorectal', 'pancrea', 'ovarian', 'prostate',
-  'renal cell', 'bladder', 'esophageal', 'cervical', 'endometrial', 'thyroid', 'nasopharyngeal',
+  'renal cell', 'bladder', 'esophageal', 'cervical', 'endometrial', 'thyroid', 'nasopharyngeal',  // leftover-allow：肿瘤排异词表里的英文病种名，用于把非 SBS 试验挡在门外，不是底本残留
   'tumor', 'tumour', 'neoplasm', 'metasta', 'oncol', 'chemotherap', 'immunotherap',
   'copanlisib', 'olaparib', 'durvalumab', 'pembrolizumab', 'nivolumab', 'ipilimumab', 'trastuzumab',
   'bevacizumab', 'atezolizumab', 'dupilumab', 'anlotinib', 'gemcitabine', 'paclitaxel', 'docetaxel',

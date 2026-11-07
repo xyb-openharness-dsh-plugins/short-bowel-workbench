@@ -33,6 +33,7 @@ const VALUE_SRC = /(?:getAttribute|get_attribute|textContent|text_content|innerT
 /* 非空断言：出现其中之一即认为"先证了有东西" */
 const NONEMPTY = [
   /\.length\s*>\s*0/, /\.length\s*!==?\s*0/, /\.length\s*>=\s*1/,
+  /\.size\s*>\s*0/, /\.size\s*!==?\s*0/,   // Set/Map 的非空与 Array.length 同族（2026-11-08 补）
   /len\s*\(\s*\)\s*>\s*0/, /len\(/,
   /width\s*>\s*0/, /height\s*>\s*0/,
   /:\s*['"]\s*['"]\s*\)/,            // 形如 != '' 的反面：显式排除空

@@ -247,7 +247,14 @@ async function main() {
     process.exit(0)
   }
   const sandbox = {}
-  try { new Function('window', readFileSync(DATA, 'utf8'))(sandbox.window = {}) } catch (e) { console.error(`✗ primer-data.js 求值失败：${e.message}`); process.exit(2) }
+  /* 页面加载顺序是 demo-data.js → primer-data.js（index.html 同序）：本仓的 primer-data.js
+     委托 window.DEMO.primer（36 号唯一源），所以求值前先把同目录的 demo-data.js 装进沙箱。 */
+  try {
+    const demoFile = join(dirname(DATA), 'demo-data.js')
+    if (existsSync(demoFile)) new Function('window', readFileSync(demoFile, 'utf8'))(sandbox.window = {})
+    if (!sandbox.window) sandbox.window = {}
+  } catch (e) { console.error(`✗ demo-data.js 求值失败：${e.message}`); process.exit(2) }
+  try { new Function('window', readFileSync(DATA, 'utf8'))(sandbox.window) } catch (e) { console.error(`✗ primer-data.js 求值失败：${e.message}`); process.exit(2) }
   const primer = sandbox.window.DISEASE_PRIMER
   if (!primer) { console.error('✗ 没有设置 window.DISEASE_PRIMER'); process.exit(2) }
 

@@ -68,7 +68,12 @@ else if (!/^https:\/\/github\.com\/[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+?(?:\.git)?\/
 /* 剥掉注释行再匹配：头注释里的「customFrame=false 标准分栏」是史述不是代码
    （2026-11-06 小苗宝 achondroplasia-workbench 实测：build 头注释让断言读出 'true · 业务 left 0.65'）。 */
 const stripLineComments = (t) => t.split('\n').filter((l) => !/^\s*(\/\/|\*|\/\*)/.test(l)).join('\n')
-const cf = stripLineComments(both).match(/["']?(?:customFrame|CUSTOM_FRAME)["']?\s*[:=]\s*([^,}\n]+)/)?.[1]?.trim()
+/* 构建注入形态（src/client.js 的 `__CUSTOM_FRAME__ === 'true'`）经 build-client 后是表达式，
+   不是字面量——字面量的唯一来源是 lib/layout.js 的 PANEL.customFrame。所以先找对象字面量
+   `customFrame: true/false`，找不到才回退声明式匹配（避免把合法的注入表达式误判为不合格）。 */
+const cfLiteral = stripLineComments(both).match(/customFrame\s*:\s*(true|false)\b/)?.[1]
+const cf = cfLiteral
+  ?? stripLineComments(both).match(/["']?(?:customFrame|CUSTOM_FRAME)["']?\s*[:=]\s*([^,}\n]+)/)?.[1]?.trim()
 if (cf && !/^(true|false)$/.test(cf)) problems.push(`customFrame 不是 true/false 字面量：${cf}（宿主：Invalid custom frame flag）`)
 
 // 5) businessSide ∈ {left,right}（宿主：Invalid workbench business side）

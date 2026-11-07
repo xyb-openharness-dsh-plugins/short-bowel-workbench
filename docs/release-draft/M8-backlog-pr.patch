@@ -1,0 +1,13 @@
+diff --git a/BACKLOG.md b/BACKLOG.md
+index 259b1fe..6cc81db 100644
+--- a/BACKLOG.md
++++ b/BACKLOG.md
+@@ -328,7 +328,7 @@
+ | 68 | 原发性硬化性胆管炎 | 401 | T2 | ⬜ 招募中 | 👤🤝📝 |
+ | 69 | 进行性纤维化性间质性肺疾病 | 408 | T1 | 🔵 [pf-ild-workbench](https://github.com/xyb-openharness-dsh-plugins/pf-ild-workbench) v0.2.1（2026-10-25 认领，小呼宝 BreathPal；G1 已签 · V1 通过 · V2/V3 未验） | 🩺📝 补位 |
+ | 70 | 复发性心包炎 | 412 | T2 | ⬜ 招募中 | 👤🤝📝 |
+-| 73 | 短肠综合征 | 428 | T2 | ⬜ 招募中 | 👤🤝📝 |
++| 73 | 短肠综合征 | 428 | T2 | 🔵 [short-bowel-workbench](https://github.com/xyb-openharness-dsh-plugins/short-bowel-workbench) v0.2.1（2026-11-08 认领开工，[Issue #65](https://github.com/xyb-openharness-dsh-plugins/.github/issues/65)，小养宝 NutriPal；G1–G3/V1/V2 自动签认待晨审追认，V3 真机走查待用户会话；0 患者访谈 0 临床审核已标注） | 👤🩺📝 补位 |
+ | 76 | 大动脉炎 | 454 | T1 | 🔥 优先招募 | 👤🤝📝🩺 |
+ | 79 | 血栓性血小板减少性紫癜 | 472 | T2 | ⬜ 招募中 | 👤🤝📝 |
+ | 80 | 转甲状腺素蛋白淀粉样变性 | 478 | T1 | 🔵 [attr-workbench](https://github.com/xyb-openharness-dsh-plugins/attr-workbench) v0.3.1（2026-10-21 认领，真机装机迭代中） | 已认领 · 👤🩺📝 补位 |

@@ -57,7 +57,7 @@
 ## 怎么用
 
 - 原型：直接用浏览器打开 `prototypes/v0.2/index.html`（全部为合成示例，刷新重置）。
-- 开发版：接入 DSH Desktop 后从工作台面板进入（见 docs/RELEASE.md 与 docs/06-VALIDATION-AND-RELEASE.md）。
+- 开发版 v0.2.1 已装入 DSH Desktop（宿主清单已加载、路由 401 鉴权先行）；真机业务走查待用户新建会话（见 docs/signoffs/V2V3-自动签认.md）。
 
 ## 数据与口径
 

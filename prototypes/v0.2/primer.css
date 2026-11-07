@@ -1,0 +1,13 @@
+/* primer.css — 疾病概要整页浮层（36 号形态：整屏、四段、每段来源行） */
+.primer-overlay{position:fixed;inset:0;z-index:50;background:rgba(38,52,44,.4);backdrop-filter:blur(3px);display:none}
+.primer-overlay.open{display:block}
+.primer-panel{position:absolute;inset:5vh 4vw;max-width:980px;margin:0 auto;background:#fff;border-radius:20px;box-shadow:0 30px 80px rgba(20,40,28,.3);display:flex;flex-direction:column;overflow:hidden}
+.primer-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:22px 28px 14px;border-bottom:1px solid var(--line)}
+.primer-head h2{font-size:22px;margin-top:4px}
+.primer-body{flex:1;overflow:auto;padding:20px 28px 28px}
+.primer-body h3{font-size:16px;margin:20px 0 6px}
+.primer-body h3:first-child{margin-top:0}
+.primer-body p{font-size:13.5px;line-height:1.68}
+.primer-src{font-size:11px;color:var(--muted);margin-top:6px;padding-top:4px;border-left:3px solid var(--line-strong);padding-left:9px}
+.primer-foot{display:flex;justify-content:space-between;gap:10px;padding:13px 28px;border-top:1px solid var(--line);background:#fcfdfc;flex-wrap:wrap}
+.primer-notice{font-size:11.5px;color:var(--muted);align-self:center}

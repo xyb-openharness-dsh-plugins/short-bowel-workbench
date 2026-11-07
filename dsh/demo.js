@@ -37,7 +37,13 @@ export function loadDemoData({ file = DEMO_SOURCE_FILE } = {}) {
   vm.runInContext(source, sandbox, { filename: file });
   const demo = sandbox.window?.DEMO;
   if (!demo || !demo.profiles) throw new Error(`demo-data.js 求值失败或缺少 window.DEMO：${file}`);
-  return JSON.parse(JSON.stringify(demo));
+  const merged = JSON.parse(JSON.stringify(demo));
+  try {
+    const primerFile = new URL('../prototypes/v0.2/primer-data.js', import.meta.url);
+    vm.runInContext(readFileSync(primerFile, 'utf8'), sandbox, { filename: primerFile.pathname });
+    merged.primer = sandbox.window?.DISEASE_PRIMER ? JSON.parse(JSON.stringify(sandbox.window.DISEASE_PRIMER)) : null;
+  } catch { merged.primer = null; } /* primer 缺失由 readmodels 兜底，不掩盖 demo 本体 */
+  return merged;
 }
 
 /* ---------------- 源串 → source_kind（词表归类；readmodels 用同一张表还原） ---------------- */

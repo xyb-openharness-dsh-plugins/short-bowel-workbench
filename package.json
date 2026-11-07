@@ -1,6 +1,6 @@
 {
   "name": "@xyb-community/short-bowel-workbench",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "本机优先的短肠综合征营养支持登记、化验随访、导管与并发症筛查、生活照护工作台",
   "private": true,
   "type": "module",

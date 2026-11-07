@@ -16,7 +16,7 @@
         <button class="icon-button" data-primer-close aria-label="关闭疾病概要">×</button>
       </div>
       <div class="primer-body">
-        ${P.sections.map((s) => `<h3>${s.h}</h3><p>${s.body}</p><div class="primer-src">${s.src}</div>`).join('')}
+        ${P.sections.map((s) => `<h3>${s.h}</h3>${s.body ? `<p>${s.body}</p>` : (s.points ? `<ul style="padding-left:20px;margin:6px 0">${s.points.map((t) => `<li style="font-size:13.5px;line-height:1.7">${t}</li>`).join('')}</ul>` : '')}<div class="primer-src">${s.src}</div>`).join('')}
         <div class="notice plain" style="margin-top:20px">本概要只做名词与边界解释（第②层），不生成个体判断；出口口径固定：「按受累器官与病情轻重排列」「不代表任何一项适合你」「需要问你的医生」。未取得原件处已注明「据二次来源」。</div>
       </div>
       <div class="primer-foot">

@@ -1,4 +1,13 @@
 'use strict';
-/* primer-data.js — 疾病概要数据（36 号）。内容取自 demo-data.js 的 DEMO.primer（唯一源），
-   这里只做 window.DISEASE_PRIMER 暴露，供探针与 primer.js 读取（P8）。 */
-window.DISEASE_PRIMER = window.DEMO.primer;
+/* primer-data.js — 疾病概要数据（36 号）。v0.2.1：四段自持（id: definition/evidence/landscape/trend），
+   本文件是疾病概要内容的唯一源；demo-data.js 不再复制（ui-parity 要求两目录逐字节一致）。
+   口径：第②层解释；未取得原件处注明「据二次来源」；趋势段只写已发生事实并带时间。 */
+window.DISEASE_PRIMER = {
+  title: '短肠综合征是什么？',
+  sections: [
+    { id: 'definition', h: '定义', body: '短肠综合征（Short Bowel Syndrome）通常指因小肠被广泛切除后，剩余肠道不足以吸收足够的营养与水分，需要医疗营养支持的一段状态。这里只做名词解释，不做个体判断。', src: '来源：《86 个罕见病病种诊疗指南（2025 年版）》#73（官方 PDF，2025-07 发布）· 未取得章节逐字原文，据题录整理' },
+    { id: 'evidence', h: '医学资料规范和指南情况', body: '国内有罕见病目录与配套诊疗指南（2025 年版）；国际上有 ESPEN 家庭肠外营养实践指南（Clinical Nutrition 2023）。本工作台的监测字段（电解质、肝功能、微量元素等）按这些指南的「内容边界」整理，阈值一律【待核】。', src: '来源：NHC 官方 PDF（已实抓）· ESPEN practical guideline: Home parenteral nutrition（已实抓）' },
+    { id: 'landscape', h: '治疗全景', points: ['按受累器官与病情轻重排列，个体方案以医生为准：', '营养支持（肠外/肠内/口服）', '肠康复', '并发症处理（导管、肝胆、肾、骨）', '部分患者经评估考虑小肠移植（名词地图）', '本段是名词地图，不代表任何一项适合你，需要问你的医生。'], src: '来源：同上两份指南的章节名 · 未取得原件处据二次来源' },
+    { id: 'trend', h: '发展趋势', body: '趋势只写已发生的事实并带时间：家庭肠外营养管理在长期化、居家化；个别药物在中国大陆的获批状态以 NMPA 官方信息为准（本工作台 2026-11-07 未在线核验成功，标【待核】）。', src: '来源：医学台账（research/medical）· NMPA 核验失败记录在案' }
+  ]
+};

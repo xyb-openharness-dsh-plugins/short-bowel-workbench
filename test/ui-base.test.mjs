@@ -75,9 +75,9 @@ test('MinerU 六部件齐：设置 UI / settings API / 上传解析 / 状态 / �
   assert.match(s, /persist=1/, '导入只进候选（persist=1 落 documents+candidates）')
 })
 
-test('版本回退态：APP_INFO 回退 0.2.0，bootstrap 成功后取服务端版本并标注连接态', () => {
+test('版本回退态：APP_INFO 回退与 VERSION 同值，bootstrap 成功后取服务端版本并标注连接态', () => {
   const s = app()
-  assert.match(s, /const APP_INFO = \{ version: '0\.2\.0'/)
+  assert.match(s, /const APP_INFO = \{ version: '0\.2\.1'/)
   assert.match(s, /未连接服务/, '拿不到服务时界面必须标注「未连接服务」')
   assert.match(s, /APP_INFO\.version = data\.version/, '连接后版本从 bootstrap 取')
 })

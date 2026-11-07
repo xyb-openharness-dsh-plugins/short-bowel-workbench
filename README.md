@@ -30,28 +30,28 @@
 
 全部数据为两套合成示例档案（A 刚确诊记录少 / B 长期随访记录多），顶栏切换、整页联动。
 
-![看板：术后状态卡、输液提醒、待办与问题清单（档案 A）](docs/screenshots/v0.2.0-home-a.png)
+![看板：术后状态卡、输液提醒、待办与问题清单（档案 A）](docs/screenshots/v0.2.1-home-a.png)
 *看板首屏：术后第 N 天由档案日期算出，不手填；右侧是就诊前想问的事。*
 
-![病情一图秀：化验趋势按可比组连线 + 事件泳道（档案 B）](docs/screenshots/v0.2.0-onechart-b.png)
+![病情一图秀：化验趋势按可比组连线 + 事件泳道（档案 B）](docs/screenshots/v0.2.1-onechart-b.png)
 *不同方法/机构的化验分线不合并；调药、并发症、就诊各占一条泳道。*
 
-![营养支持 · 输液日历（档案 B）](docs/screenshots/v0.2.0-calendar-b.png)
+![营养支持 · 输液日历（档案 B）](docs/screenshots/v0.2.1-calendar-b.png)
 *输液日/非输液日的月历打点；打点、登记表、一图秀读同一份数据。*
 
-![指标卡 3D 翻面：正面最近值/差值/次数/来源，背面趋势折线（档案 B）](docs/screenshots/v0.2.0-metrics-b-flipped.png)
+![指标卡 3D 翻面：正面最近值/差值/次数/来源，背面趋势折线（档案 B）](docs/screenshots/v0.2.1-metrics-b-flipped.png)
 *翻面不改变栅格高度；差值只写「较前次」，跨可比组不做差。*
 
-![折叠卡收起态（档案 B · 方案版本）](docs/screenshots/v0.2.0-fold-closed.png)
+![折叠卡收起态（档案 B · 方案版本）](docs/screenshots/v0.2.1-fold-closed.png)
 *营养方案按版本折叠；更正 = 新增版本，旧版本永远可查。*
 
-![折叠卡展开态](docs/screenshots/v0.2.0-fold-open.png)
+![折叠卡展开态](docs/screenshots/v0.2.1-fold-open.png)
 *展开后可见频次/时长/途径/液体量/热量，未记录的字段显式「未知」。*
 
-![疾病概要「?」：四段整页面板，每段带来源行](docs/screenshots/v0.2.0-primer.png)
+![疾病概要「?」：四段整页面板，每段带来源行](docs/screenshots/v0.2.1-primer.png)
 *定义 → 指南情况 → 治疗全景 → 发展趋势；未取得原件处注明「据二次来源」。*
 
-![窄宽 390px 无横向溢出](docs/screenshots/v0.2.0-390-home.png)
+![窄宽 390px 无横向溢出](docs/screenshots/v0.2.1-390-home.png)
 *三档断点 1180/900/600；390 宽实测 scrollWidth = 390。*
 
 ## 怎么用

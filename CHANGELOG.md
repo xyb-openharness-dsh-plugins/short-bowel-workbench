@@ -2,6 +2,11 @@
 
 只增不删；每条写清"改了什么 + 为什么 + 用户可见结果"。版本号与 VERSION、package.json 三处必须一致。
 
+## 0.2.1
+
+- primer-data 四段显式化（definition/evidence/landscape/trend），审计可解析；内容与 DEMO 唯一源逐字一致。
+- 版本十处同源刷新。
+
 ## 0.2.0 — 2026-11-08
 
 M5：七步移植 + MinerU 六部件 + 双形态回归 + test 全绿。包版本 0.2.0（与 VERSION、lib/version.js、页面字面量十处同源）。

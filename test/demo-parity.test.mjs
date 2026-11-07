@@ -7,6 +7,8 @@
  *      与原串的措辞差异逐对登记在 SOURCE_PAIRS（如「复诊记录」→「门诊记录」）。
  * 除这两类外，任何字段形状或取值不一致都是失败。
  */
+import vm from 'node:vm'
+import { readFileSync } from 'node:fs'
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { fileURLToPath } from 'node:url'
@@ -95,9 +97,13 @@ test('id 归一化后与唯一源逐项 deepEqual（事件/筛查/导管/生活/
   assert.deepEqual(stripIds(data.candidates), stripIds(demo.candidates));
 });
 
-test('resources / primer 与唯一源逐字节一致（内容性常量直接取自唯一源）', () => {
+test('resources / primer 与唯一源一致（primer 唯一源为 primer-data.js，经 loadDemoData 挂载）', () => {
   assert.deepEqual(data.resources, demo.resources);
-  assert.deepEqual(data.primer, demo.primer);
+  const primerSrc = readFileSync(new URL('../prototypes/v0.2/primer-data.js', import.meta.url), 'utf8');
+  const sandbox = vm.createContext({ window: {} });
+  vm.runInContext(primerSrc, sandbox);
+  assert.deepEqual(data.primer, sandbox.window.DISEASE_PRIMER);
+  assert.equal(data.primer.sections.length, 4);
 });
 
 test('展示 id 稳定且带前缀（两轮 bootstrap 同值；前端当不透明令牌）', () => {

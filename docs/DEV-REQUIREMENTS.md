@@ -41,3 +41,10 @@
 ## 六、验收口径
 
 每条硬约束可被命令或截图验证；结果四态：通过/失败/跳过（原因）/待人工（缺什么）。「通过」必须带数字或 file:line。
+
+## 七、首夜回流的新坑（2026-11-08，带错误来源）
+
+1. 三出口私密过滤函数签名固定返回 `{kept, note}`，禁止按调用点分叉返回类型（来源：首夜 P0-1，看板漏过滤致私密正文可见）。
+2. `public/app.js` 禁止从原型直拷覆盖；差异必须住 DEV-BRIDGE 注释对（来源：M5 后误覆盖炸掉 apiBase/agent-draft/MinerU，8 用例红）。
+3. 升版固定顺序一次走完十处同源：VERSION → build:version → build:client → 双 index.html → app 回退值 → 原型 APP_INFO → README → CHANGELOG → 截图 → check-version-literal 收口（来源：0.2.1 半途连环红）。
+4. 疾病概要唯一源 = primer-data.js 自持四段（id 固定），demo-data 不复制（来源：audit 四段解析失败返工）。

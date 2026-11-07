@@ -454,7 +454,7 @@ function pageHome() {
           ${go('导管与并发症 →', 'complications', '导管档案', 'text-button')}
         </section>
         <section class="card"><div class="card-head"><h3>生活与心理</h3>${pill(`${lifeItems.length} 条中私密 ${privateCount(lifeItems)} 条`, 'grey')}</div>
-          <p style="font-size:12.5px">${(() => { const shared = filterPrivate(lifeItems).kept; return shared.length ? `最近一条（可共享）：${esc(shared.slice(-1)[0].text.slice(0, 26))}…` : (lifeItems.length ? '现有记录都是私密，不出现在任何出口。' : '还没有记录。只写事实，不需要整理好情绪。'); })()}</p>
+          <p style="font-size:12.5px">${(() => { const shared = filterPrivate(lifeItems).kept; return shared.length ? `最近一条（可共享）：${esc(shared[0].text.slice(0, 26))}…` : (lifeItems.length ? '现有记录都是私密，不出现在任何出口。' : '还没有记录。只写事实，不需要整理好情绪。'); })()}</p>
           ${go('记一条 →', 'life', '生活影响', 'text-button')}
         </section>
       </div>

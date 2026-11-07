@@ -1,0 +1,1261 @@
+{
+  "topic": "short-bowel",
+  "disease": "短肠综合征（SBS）· 肠衰竭",
+  "year": "2026",
+  "snapshotDate": "2026-11-08",
+  "tool": "unified-trial-mcp @ /Users/qinxiaoqiang/Downloads/unified_search_trials/dist/src/cli/main.js",
+  "queries": [
+    {
+      "keyword": "short bowel syndrome",
+      "note": "英文标准名"
+    },
+    {
+      "keyword": "SBS",
+      "note": "英文缩写（词边界过滤后靠相关性判据兜底）"
+    },
+    {
+      "keyword": "intestinal failure",
+      "note": "肠衰竭（上位概念，宽口径）"
+    },
+    {
+      "keyword": "intestinal rehabilitation",
+      "note": "肠康复（治疗线宽口径）"
+    },
+    {
+      "keyword": "teduglutide",
+      "note": "GLP-2 类药物线"
+    },
+    {
+      "keyword": "glepaglutide",
+      "note": "GLP-2 类药物线（长效）"
+    },
+    {
+      "keyword": "parenteral nutrition",
+      "note": "家庭肠外营养宽口径（靠标题筛）"
+    },
+    {
+      "keyword": "短肠综合征",
+      "note": "中文标准名"
+    },
+    {
+      "keyword": "肠衰竭",
+      "note": "中文上位概念"
+    },
+    {
+      "keyword": "替度格鲁肽",
+      "note": "中文药名"
+    }
+  ],
+  "perSourceLimit": 200,
+  "recordCount": 588,
+  "dbCount": 588,
+  "needsHumanReview": [
+    {
+      "recordId": "chinadrugtrials:CTR20150464",
+      "title": "评价evolocumab对糖尿病合并高脂血症患者的疗效和安全性",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20150659",
+      "title": "利格列汀对血管高危糖尿病人心血管肾微血管安全性研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20160224",
+      "title": "晚期结直肠癌比较帕尼单抗与西妥昔单抗的疗效及安全性",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20160233",
+      "title": "阿帕他胺加雄激素剥夺治疗前列腺癌临床研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20160491",
+      "title": "JNJ-56021927联合放疗治疗前列腺癌临床研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20170919",
+      "title": "在非小细胞肺癌患者中比较Ensartinib与克唑替尼的III期随机研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20171000",
+      "title": "比较avelumab和化疗作为指定非小细胞肺癌治疗的优效性",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20171112",
+      "title": "非小细胞肺癌患者使用A317对比多西他赛的安全性有效性",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20191381",
+      "title": "依洛尤单抗在未发生心梗或卒中的心血管高风险患者影响",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20191452",
+      "title": "REGN2810联合双药化疗治疗晚期或转移性非小细胞肺癌",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20191453",
+      "title": "比较REGN2810与铂类化疗药治疗晚期或转移性非小细胞肺癌",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20211008",
+      "title": "以前接受过曲妥珠单抗（+/-帕妥珠单抗）和含紫杉烷治疗，并且HER2和PD-L1均阳性的局部晚期（LABC）或转移性乳腺癌（MBC）患者中，评价恩美曲妥珠单抗+阿替利珠单抗对比恩美曲妥珠单抗+安慰剂治",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20211603",
+      "title": "Adagloxad Simolenin (OBI-822) /OBI-821治疗高危早期-Globo H-阳性的三阴性乳腺癌患者的III期、随机、开放性研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20212032",
+      "title": "BO42843阿替利珠单抗膀胱癌临床研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20212237",
+      "title": "一项在未接受过生物类缓解病情抗风湿药治疗的活动性银屑病关节炎受试者中评价Deucravacitinib的疗效和安全性的3期研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20213367",
+      "title": "一项在未经治疗的CLL/SLL 患者中比较Pirtobrutinib（LOXO-305）与苯达莫司汀联合利妥昔单抗的III 期研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20220946",
+      "title": "Bintrafusp alfa（M7824）项目延展研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20221549",
+      "title": "Anifrolumab治疗狼疮性肾炎的III期研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20221558",
+      "title": "一项在复发性/难治性弥漫大B细胞淋巴瘤患者中Epcoritamab对比研究者选择的化疗的III期试验",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20221984",
+      "title": "评价tucatinib联合曲妥珠单抗和帕妥珠单抗维持治疗转移性HER2阳性乳腺癌的安全性和有效性研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20222715",
+      "title": "一项在中度至重度活动性系统性红斑狼疮研究受试者中评价dapirolizumab pegol的有效性和安全性的研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20230037",
+      "title": "在系统性红斑狼疮患者中评价两种ianalumab治疗方案联合标准治疗的III期研究（SIRIUS-SLE 1）",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20230106",
+      "title": "评价PJ009 单次和多次给药在健康志愿者体内的安全耐受性、药代动力学（PK）",
+      "query": "短肠综合征"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20230543",
+      "title": "PONSEGROMAB治疗癌症恶液质研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20241291",
+      "title": "在系统性红斑狼疮受试者中评估两种ianalumab给药方案的长期安全性的III期扩展研究（SIRIUS-SLE扩展研究）",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20250559",
+      "title": "一项旨在评估系统性红斑狼疮研究受试者接受dapirolizumab pegol治疗的长期安全性和耐受性的多中心、开放性扩展研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20251033",
+      "title": "富马酸比索洛尔片的人体生物等效性试验",
+      "query": "SBS"
+    },
+    {
+      "recordId": "chinadrugtrials:CTR20261784",
+      "title": "富马酸比索洛尔片生物等效性研究",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ctv:UTN000011763",
+      "title": "Cell Harvest and Preparation for Surgery Branch Treatment Protocols",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ctv:UTN000533104",
+      "title": "A Phase I Trial to Evaluate the Tolerability, Pharmacokinetics and Preliminary Efficacy of XS-04 in ",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ctv:UTN000536843",
+      "title": "A Phase Ia/II, Multicenter Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Efficac",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ctv:UTN000549746",
+      "title": "Feasibility of a Wireless Thermal Capsule Endoscopy to Detect Gastrointestinal Thermal Variance",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ctv:UTN000553991",
+      "title": "Comparing the Efficacy and Safety of the EndoZipTM System and Apollo Endoscopic Sleeve Gastroplasty ",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ctv:UTN000606564",
+      "title": "A Phase Ib, Open-Label Clinical Study of HS-IT101 Injection in Patients With Advanced Renal Cancer",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ctv:UTN000612439",
+      "title": "Efficacy of Synbiotic Supplementation on Gastrointestinal Symptoms, Appetite, and Nutritional Status",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ctv:UTN000612703",
+      "title": "Effects of Preparations of Fermented Metabolites Derived From Lactic Acid Bacteria on Postoperative ",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ctv:UTN000612899",
+      "title": "Interactive Effects of Early-Life Stress, Diet, and Metabolism on Gastrointestinal Dysfunction With ",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ctv:UTN000612920",
+      "title": "Impact of Walnut Consumption on Renal Function and Classical and Emerging Biomarkers of Cardiovascul",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ACTRN12609000990224",
+      "title": "Risk factors for Stillbirth: A multi-centre case control study",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:ACTRN12614000007639",
+      "title": "Improved treatment of Type 2 Diabetes by improving the splenic function and intestinal tract using A",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ACTRN12620000864921",
+      "title": "A combined data gathering and diagnostic test accuracy study to test the feasibility of using an aco",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ACTRN12620001362987",
+      "title": "Reducing symptom burden in individuals with irritable bowel syndrome (IBS) and comorbid anxiety or d",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ACTRN12621000513819",
+      "title": "Influence of Enzyme Rich Malt Extract on gut health symptoms of irritable bowel syndrome in adults",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ACTRN12621000548831",
+      "title": "A mixed-method observational study of understanding the bowel health and gastrointestinal symptom ma",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ACTRN12621000835842",
+      "title": "Weight gain following the adoption of the chyme recycling technique in neonates with a high output s",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR-INR-17013624",
+      "title": "A clinical study for determine the effect of rhubarb, Coptis chinensis and dried ginger in regulatio",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2000029263",
+      "title": "Effects of probiotics on intestinal flora and humoral metabolism after renal transplantation and its",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2000033344",
+      "title": "Effect of LCZ696 (sacubitril/valsartan) on serum TMAO level and intestinal flora in elderly patients",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2000035145",
+      "title": "The effect of home enteral nutrition in patients",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2100043424",
+      "title": "Clinical study on the effect of colon lavage combined with Qingchang Ligan Retention enema on the in",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2100044022",
+      "title": "Application of GLIM criteria in surgical inpatients",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2100044980",
+      "title": "Effect and mechanism of artificial liver therapy on Intestinal Microecology in patients with chronic",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2100046679",
+      "title": "Research on the Correlation between CKD-PEW and Intestinal Microecology Based on Machine Learning an",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2200057861",
+      "title": "Effects of individualized nutritional intervention on intestinal barrier function repair and prognos",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2400085419",
+      "title": "Study on the relationship between acute heart failure and intestinal dysbacteriosis and intervention",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2400088973",
+      "title": "Effectiveness and safety of washed intestinal microbiota transplantation in the treatment of hepatit",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2400091555",
+      "title": "The changes of intestinal flora and serum metabolomics in dilated cardiomyopathy",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2500098366",
+      "title": "The role and mechanism of intestinal Escherichia coli in promoting heart failure in patients with ch",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2500107301",
+      "title": "Short-Chain Fatty Acid Metabolic Profiles Link Gut Microbiota Dynamics and IgG-Mediated Food Sensiti",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2500109263",
+      "title": "Step-by-step training method for basic skills in junior anesthesiology residents",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2600125602",
+      "title": "Study on the inhibition of intestinal endotoxemia by Xuebijing in the treatment of liver failure and",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2600129194",
+      "title": "Design and preliminary application of a specialized care diary for children with rare diseases",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2600129656",
+      "title": "Construction and Evaluation of Evaluation Dataset for Medical Large Model of Difficult and Severe Ca",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2600133560",
+      "title": "The Role of Nerve Block-Constructed Precision Anesthesia on Perioperative Organ Protection in Hip Su",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ChiCTR2600133920",
+      "title": "A Study on the Association between Gut Microbiota Dysbiosis, Intestinal Barrier Function and Intesti",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:CTIS2023-504430-22-00",
+      "title": "A Randomized Open-label, Single Dose, 3-Period, 6-Sequence, Cross-Over Trial with Washout Periods of",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:CTIS2024-515136-72-00",
+      "title": "- 2020PI028",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:CTRI/2015/12/006462",
+      "title": "A Two Arm, Randomized, Multicenter, Single blind, Prospective, Clinical study to evaluate efficacy &",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2018/01/011253",
+      "title": "An Open Label, Single arm, Monocentric Clinical Study to evaluate Efficacy and Safety of Ayurvedic D",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/05/025096",
+      "title": "Bowel Colonization With Multi-drug Resistant Bacterial Species in Hospitalized Patients With acute-o",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/10/028285",
+      "title": "Evaluation of efficacy and safety of intranasal administration of standardized extract of Centella a",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/10/028656",
+      "title": "Evaluation of efficacy and safety of Vitality Booster Capsules in the management of Stress and Impro",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/10/028775",
+      "title": "Evaluation of efficacy and safety of Immunity Booster Capsules as an Immunity Booster in Adults: A p",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/12/029778",
+      "title": "Evaluation of efficacy and safety of Micellar Iron in the treatment of Iron Deficiency Anaemia patie",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/12/029971",
+      "title": "Evaluation of efficacy and safety of Dermatitis Lotion in the treatment of Atopic Dermatitis in Chil",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2020/12/030006",
+      "title": "Evaluation of efficacy and safety of Constipation Formulation in the management of Constipation in C",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2021/08/035970",
+      "title": "Evaluation of efficacy and safety of Flunil ACP Capsules for the management of Upper Respiratory Tra",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2023/03/050741",
+      "title": "A Single Centric, Open-Label, Non-Randomized Phase IV Post- Marketing Surveillance Study To Evaluate",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2023/03/051058",
+      "title": "A Single Centric, Open-Label, Non-Randomized Phase IV Post- Marketing Surveillance Study to Measure ",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2023/11/059987",
+      "title": "A Prospective Study to Analyze the Short-Term and Long-Term Effectiveness of WinHealths DTx Platform",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:CTRI/2024/05/066960",
+      "title": "Comparative Study Of Trunk Impairment Scale Vs Sitting Balance Scale As A Predictor Of Functional Ou",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2024/10/075888",
+      "title": "Comparative Study of Functional Reaching Activities versus Proprioceptive Neuromuscular Facilitation",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:CTRI/2025/12/099945",
+      "title": "To Compare Pressure Support Adjustments Using Diaphragmatic Thickness Fraction And Conventional Meth",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:DRKS00016890",
+      "title": "Study of the Havelhöhe Community Hospital on interventions for irritable bowel syndrome in the conte",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:DRKS00020884",
+      "title": "Accountable Care in Germany - ACD",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:DRKS00026902",
+      "title": "Impact of chronic coffee consumption on critical illness during intensive care treatment - CritCoff",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:DRKS00041816",
+      "title": "LEC-SEQ – Lecigon as Sequential Therapy in Advanced Parkinson's Disease: a prospective, non-interven",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:EUCTR2017-003258-18-BE",
+      "title": "A randomized controlled trial to evaluate the short-term efficacy and long-term health economic impa",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:EUCTR2020-005018-17-NL",
+      "title": "Targeting metabolic flexibility in ALS (MetFlex); Safety and tolerability of Trimetazidine for the t",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:IRCT201105302858N2",
+      "title": "Lactulose take effect on fecal micro flora of patients with chronic renal failure",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:IRCT20180310039030N4",
+      "title": "A Clinical Trial on the Innovative Seromuscular Mesoplasty Technique for Management of Type IIIb Jej",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:IRCT20180909040974N4",
+      "title": "The impact of short-term psychological training on the ability of mindfulness, anxiety sensitivity, ",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:IRCT20190509043537N1",
+      "title": "Comparing the effect of Funniculum Vulgare water and Mint water on Flatulance after ceaserean",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:IRCT20220808055640N1",
+      "title": "Comparison of the Effectiveness of Acceptance and Commitment Therapy and Intensive Short-Term Dynami",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:IRCT20221101056369N1",
+      "title": "Effectiveness of Intensive Short term Dynamic Psychotherapy (ISTDP) on the Difficulty in Emotion Reg",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ISRCTN10497306",
+      "title": "A randomised, double-blind placebo controlled trial of the effectiveness of the beta-blocker bisopro",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ISRCTN12267960",
+      "title": "Predictors of local emergence and spread of artemisinin resistance among Ugandan plasmodium falcipar",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:ISRCTN12367117",
+      "title": "A phase I, open-label, single-period, single-dose study to assess the absorption, metabolism, and ex",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ISRCTN14267067",
+      "title": "Study on clinical effect and mechanism of moxibustion therapy in improving gastrointestinal dysfunct",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ISRCTN16450193",
+      "title": "Engaging patients in managing hypertension: patient experience with self-monitoring of blood pressur",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:ISRCTN16828522",
+      "title": "Understanding cauda equina syndrome (UCES)",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ISRCTN40592528",
+      "title": "Patient and family experience of the pathway for glucagon-like peptide 2 analogue",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ISRCTN61115988",
+      "title": "A preliminary randomised controlled trial of the efficacy and acceptability of a new emotional and s",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:ISRCTN72579770",
+      "title": "Acetaminophen versus ibuprofen in the management of hemodynamically significant patent ductus arteri",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ITMCTR2026001775",
+      "title": "Targeting the Gut Microbiota-Short-Chain Fatty Acid Pathway: Efficacy and Mechanism of Jingfang Mixt",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ITMCTR2026002340",
+      "title": "Effects of electroacupuncture on gut microbiota and metabolomics in patients with diarrhea-predomina",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:ITMCTR2100004452",
+      "title": "Clinical study on the effect of colon lavage combined with Qingchang Ligan Retention enema on the in",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:ITMCTR2200005492",
+      "title": "Research on the Correlation between CKD-PEW and Intestinal Microecology Based on Machine Learning an",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-jRCT1040250073",
+      "title": "Suprapapillary stent-by-stent deployment with slim-fully covered metal stents versus plastic stens f",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:JPRN-jRCT2031220579",
+      "title": "A Phase 1 Study of Apraglutide (Single Dose Study)",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:JPRN-jRCTs031240436",
+      "title": "Study on the efficacy and safety of the omega 3 fatty acid for IFALD - ESFstudy",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000024773",
+      "title": "Japanese intestinal transplant registry - intestinal transplant registry",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000026666",
+      "title": "the effect on intestinal microbiota with iron-based phosphate binder - the effect on intestinal micr",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000026667",
+      "title": "the effect on intestinal microbiota with Sucroferric oxyhydroxide - the effect on intestinal microbi",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000030454",
+      "title": "Living/ deceased donor intestinal transplantation using standardized immunosuppression protocol - In",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000032796",
+      "title": "Role of alpha-defensin produced by intestinal Paneth cells in heart failure - Role of alpha-defensin",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000035422",
+      "title": "Intravenous administration of selenium for intenstinal failure patients - Intravenous administration",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000042054",
+      "title": "Clinical study on nutritional matabolism and intestinal flora in patients with heart failure - Clini",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000043546",
+      "title": "Efficacy of a wearable biosensor for patients with COVID-19 or cardiopulmonary diseases - Efficacy o",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:JPRN-UMIN000043891",
+      "title": "An exploratory study examining the relationship between changes in intestinal flora and heart failur",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:KCT0008393",
+      "title": "Healing pattern of peri-implant dehiscence defects around implants with chemically modified SLA surf",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:KCT0010372",
+      "title": "Microbiome and metabolite mechanisms for improvement of chronic kidney loss through intestinal micro",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:KCT0011513",
+      "title": "Efficacy of a modified covered self-expandable metal stents for unresectable malignant hilar biliary",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT00072839",
+      "title": "A Pilot Study of the Safety and Efficacy of ALX-0600 in Subjects With Moderately Active Crohn's Dise",
+      "query": "teduglutide"
+    },
+    {
+      "recordId": "ictrp:NCT00286039",
+      "title": "Plasma Citrulline Level in Relation to Absorptive Surface",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT00308438",
+      "title": "An Open Label Extension Study of the Safety and Efficacy of ALX-0600 in Subjects With Crohn's Diseas",
+      "query": "teduglutide"
+    },
+    {
+      "recordId": "ictrp:NCT00382486",
+      "title": "Low Dose Ex-Vivo X-Irradiation of the Allograft and Simultaneous Bone Marrow Cell Infusion to Enhanc",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT01263574",
+      "title": "Trial of Ethanol Lock Therapy to Prevent Catheter Associated Blood Stream Infections",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01306838",
+      "title": "Early Supplementation of Enteral Lipid With Combination of Microlipid and Fish Oil in Infants With E",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01403493",
+      "title": "A Comparison of a Short Nurse Based and a Long Multidisciplinary Version of Structured Patient Educa",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01475357",
+      "title": "Intestinal Function in Neonates With Complex Congenital Heart Disease",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT01674478",
+      "title": "Early Supplementation of Enteral Microlipid With and Without Fish Oil in Premature Infants With Ente",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01696656",
+      "title": "Prescription Pattern of Adjuvant Drugs and Vitamins in Patients Undergoing Long-term Home Nutritiona",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01793168",
+      "title": "Coordination of Rare Diseases at Sanford",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01900288",
+      "title": "Mobile Technologies Assisting Patients & Family Caregivers in Healthy Living",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT01927523",
+      "title": "Improving Life Chances of Disadvantaged Youth: Testing Best-Practice Academic vs. Non-Academic Suppo",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT01946503",
+      "title": "Infant & Toddler Short Gut Feeding Outcomes Study",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02246816",
+      "title": "A Phase 3, Open Label Extension Study for Subjects That Complete Study MP-101-CL-001",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02266849",
+      "title": "Loperamide vs. Placebo's Effect on Ileostomy Output: A Clinical Randomized Blinded Cross-over Study",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02370251",
+      "title": "Fish Oil Lipid Emulsion for the Treatment of Parenteral-Nutrition-Associated Liver Disease in Infant",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02431325",
+      "title": "A Study to Investigate Gastrointestinal Epithelial Integrity and Arterial Inflammation in Individual",
+      "query": "teduglutide"
+    },
+    {
+      "recordId": "ictrp:NCT02613000",
+      "title": "Prospective, Multicenter Cohort Study on Prognostic Value of Gastrointestinal Symptoms and Intestina",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT02673645",
+      "title": "Remediating Academic Skill Deficits Among Disadvantaged Youth",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT02699320",
+      "title": "Multi-center Clinical Research About Standard Diagnosis and Treatment of Neonate Severe Digestive Sy",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02889640",
+      "title": "Increasing the Reach of Promising Dropout Prevention Programs: Examining the Trade-offs Between Scal",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT02953223",
+      "title": "A Study to Monitor the Use of an Amino Acid-Based Infant Formula",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02981888",
+      "title": "Fecal Bile Acids, Fecal Short Chain Fatty Acids and the Intestinal Microbiota in Patients With Irrit",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT02987569",
+      "title": "Teen Connections for Support From Multidisciplinary Professionals & Peers",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03054948",
+      "title": "Safety and Efficacy of SMOFlipid in Patients Intolerant to Intralipid.",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03143569",
+      "title": "Ventricular Assist Device Anti-Factor Xa (VAD ANTIX) Monitoring Study: a Prospective Randomized Feas",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT03271853",
+      "title": "Thermalogical Analysis of a Cohort of Women and Men Undergoing Mammographic Analysis.",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT03348709",
+      "title": "Does Osmolality of Oral Supplements Affect Stoma Output and Natriuresis in Patients With an Ileostom",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03350022",
+      "title": "Pilot Study on Sham Feeding in Post-operative Gastrointestinal Surgery Infants",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03444675",
+      "title": "A Multi-centre, Longitudinal (Cohort) Study in Patients Undergoing Intestinal or Multivisceral Trans",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT03451253",
+      "title": "Effects of an Amino Acid Mixture Versus a Sugar Based Sports Drink on Gastrointestinal Function, Inf",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03513263",
+      "title": "RCT: Evaluating the Effect of Oral Care for Periodontitis in Rhematoid Arthritis Patients in Uganda",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT03582384",
+      "title": "Use of Tocofersolan (Vedrop®) to Prevent or Treat Refractive Vitamin E Deficiency in Infants and Chi",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03716115",
+      "title": "Therapeutic Approaches to Malnutrition Enteropathy: Phase II Trials of Four Novel Interventions in C",
+      "query": "teduglutide"
+    },
+    {
+      "recordId": "ictrp:NCT03717584",
+      "title": "A Cohort Study of the Intestinal Microbiota of Premature Infants",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT03773237",
+      "title": "Randomized Prospective Trial Comparing Intralipid Versus SMOFlipid in New HPN Patients.",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT03849248",
+      "title": "The Effect of Maternal Scent on Nutrition and Development of Preterm Infants",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT03861208",
+      "title": "Assessing if Feelings of Hunger and Fullness Affect Learning in Children 3-4 Years Old",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT03861325",
+      "title": "Insuffisance Gastro-intestinale Aiguë Translocation Microbienne Chez Les Patients en Choc Septique :",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT03968549",
+      "title": "Study of the Importance of Intestinal Microbiota in Patients With Heart Failure - Randomized, Double",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT03983434",
+      "title": "Fecal Bile Acids, Fecal Short Chain Fatty Acids and the Intestinal Microbiota in Patients With Irrit",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT04109352",
+      "title": "Validation and Field-applicability of a 13C-Sucrose Breath Test to Assess Carbohydrate Uptake and Ut",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT04141826",
+      "title": "Absorption of Peptides, Fluid, and Electrolytes in Patients With an Ileostomy",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT04247568",
+      "title": "The Use of Audiotaped Hypnosis in Promoting Weight Loss Using the Transtheoretical Model of Change",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT04270487",
+      "title": "A Randomized Controlled Trial to Evaluate the Short-term Efficacy and Long-term Health Economic Impa",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT04383106",
+      "title": "Bowel Colonization With Multi-drug Resistant Bacterial Species in Hospitalized Patients With acute-o",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT04433546",
+      "title": "A Randomized, Double-Blind, Parallel Group Study to Assess the Efficacy and Safety of Once Weekly Su",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT04565210",
+      "title": "Effects of Oriental Music oN Preterm InfAnts: A Randomized Controlled Trial. (OMNIA Trial)",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT04638296",
+      "title": "Perceptions On Music And Noise In The Operating Room: A Cross Sectional Study",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT04698109",
+      "title": "Costituzione Della Biobanca Del Microbiota Intestinale e Salivare Umano: Dalla Disbiosi Alla Simbios",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT04782011",
+      "title": "Feasibility of Using the Chemical Classification System/Defined Daily Doses Tool to Monitor Antibiot",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT04783220",
+      "title": "Comprehensive PaREnting ProgrAm to Enhance PREterm Infants' Health and Development: A Randomized Con",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT04789031",
+      "title": "Muscle Status to Oral Nutritional Supplementation in Hemodialysis Patients With Protein Energy Wasti",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT04945291",
+      "title": "Evaluation of a Food Estimation Method Using the Hands and a Mobile App for Self-monitoring of Calor",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05023382",
+      "title": "Special Drug Use Investigation of Revestive Subcutaneous Injection 3.8 mg (All-case Surveillance)",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT05024578",
+      "title": "Stimulating Brain Waves During Deep Sleep",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05181085",
+      "title": "A Phase 1, First Time in Human Study to Evaluate the Safety, Tolerability, and Pharmacokinetics of N",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT05228626",
+      "title": "Safety and Efficacy of COVIDEX™ Therapy in Management of Adult Covid-19 Patients in Uganda: A Random",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05257499",
+      "title": "In-person Versus Online Debriefing in the Simulation Sessions of the Helping Babies Breathe Course: ",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05275829",
+      "title": "Traditional Face-to-Face Versus Distance Learning of Basic Suturing Skills in Novice Learners",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05315765",
+      "title": "Development of a Patient Reported Outcome Measure for GastroIntestinal Recovery",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT05730530",
+      "title": "Nutrition Education Intervention to Improve Fruit and Vegetable Consumption in Preschoolers",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05860725",
+      "title": "Appalachian Voices for Health - Feasibility Trial of a Multi-level Media Production and Social Marke",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT05902104",
+      "title": "CAMP: CGM-Assisted Management of PN",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT05941650",
+      "title": "To Study the Clinical Effect After Administration of Short-chain Fructooligosaccharides in Women Age",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT05965440",
+      "title": "Impact of Dapagliflozin on Intestinal Microbiota Composition and on the Metabolites Derived From the",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT06094504",
+      "title": "Impact of Broad-Spectrum Light on Markers of Metabolic Regulation in the Neonatal Intensive Care Uni",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT06169774",
+      "title": "Video Training Supplementation to Reduce the Risk of Central Venous Catheter Infection in Patients D",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT06176495",
+      "title": "Empowering Patients With Diabetes and Their Family Members: Assessing the Impact of Free Informative",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT06178302",
+      "title": "DEscripitive Patient Analysis to Enable Risk-based Quality Improvement Measures in a lArge iNternal ",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT06185088",
+      "title": "Michigan ENdoluminal Distraction Device (MENDD) Tolerance Assessment Study",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT06237530",
+      "title": "Exploring Visceral Body Scan, Somatosensory Body Scan, and External Meditation",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT06300684",
+      "title": "Sleep, Diet and Chrononutrition: Studying the Dual Effect of Cognitive Behavioral Therapy for Insomn",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT06347471",
+      "title": "The Transmission of Artemisinin Resistant Parasites Before and After Conventional Artemisinin-combin",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT06427642",
+      "title": "Efficacy Evaluation of Umbilical Cord Blood-derived Mononuclear Cells in the Treatment of Refractory",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT06523101",
+      "title": "A Phase 1 Study to Evaluate the Safety, Tolerability and Pharmacokinetics of PJ009 in Healthy Adult ",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT06668922",
+      "title": "Fecal Bile Acids, Fecal Short Chain Fatty Acids and the Intestinal Microbiota in Patients With Irrit",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT06711107",
+      "title": "Predicting Failure of Non-operative Management of Adhesive Small Bowel Obstruction Through Deep Lear",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT06845865",
+      "title": "Measurement of Intestinal Permeability in Intensive Care Patients With Single or Multiple Organ Fail",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT06938542",
+      "title": "Palliative Care Needs of Children With Rare Diseases and Their Families",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT06978855",
+      "title": "Efficacy of Wrist Acupressure Band on Sleep Quality in Medical Trainees: A Single-Blinded Cross-Over",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07008950",
+      "title": "Self-efficacy and Knowledge (SEEK) Trial to Improve Sexual Reproductive Health and Well-being for Sy",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07046351",
+      "title": "weSIPsmarter: An Adaptation and Efficacy Trial to Evaluate a Behaviorally Based Digital Health Inter",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07202910",
+      "title": "Imaging-Based Biomarkers for Non-Invasive Pediatric Liver Diagnostics",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT07231666",
+      "title": "Goldilocks' Zone: Optimised Osmolality in Supplements for the Patient With an Ileostomy",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT07298941",
+      "title": "An Adaptive Intervention to Improve Pain Outcomes Following Cognitive Behavioral Therapy for Insomni",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07308327",
+      "title": "Intestinal Probiotics Dietary Supplement",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT07366125",
+      "title": "THE EFFECT OF SCENARIO-BASED SIMULATION METHOD ON NURSING STUDENTS' BASIC LIFE SUPPORT PRACTICE SKIL",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07481513",
+      "title": "Impact of Intermittent Fasting on the Mental Health of Perimenopausal Women",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07490054",
+      "title": "An Open-Label, Pilot Clinical Trial To Test The Safety And Feasibility Of Intestinal Microbiota Tran",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:NCT07507149",
+      "title": "Evaluating the Feasibility and Effectiveness of an Online Psychological Intervention Targeting Probl",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07664800",
+      "title": "The Effect of Nurse-Delivered Online Counseling on Invasive Pain, Anxiety, and Comfort Levels in Pat",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07689513",
+      "title": "Association Between Brain Type (2D:4D Digit Ratio), Playing Position, and Mental Toughness Among Ama",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NCT07714499",
+      "title": "Comparison of Resting Energy Expenditure According to Gastrointestinal Functional Status",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT07829666",
+      "title": "Short-Term Effects of a Low-FODMAP Diet, Adapted NICE Dietary Advice, and Adapted NICE Dietary Advic",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:NCT07877506",
+      "title": "Sodium Bicarbonate Solution Enhances Lens Cleanliness of Magnetically Controlled Capsule Endoscopy: ",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:NL-OMON58442",
+      "title": "Weaning is winning? (WeWin study): are PN graduates growing up healthy? - Weaning is winning? (WeWin",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:PACTR201811640750761",
+      "title": "EFFICACY AND SAFETY OF ARTEMETHER-LUMEFANTRINE, ARTESUNATE – AMODIAQUINE AND DIHYDROARTEMISININ-PIPE",
+      "query": "SBS"
+    },
+    {
+      "recordId": "ictrp:RBR-3h5fr2s",
+      "title": "Characterization and prognostic value of gastrointestinal manifestations and oral nutritional supple",
+      "query": "intestinal failure"
+    },
+    {
+      "recordId": "ictrp:TCTR20250916001",
+      "title": "The effect of melatonin in the improvement of the symptoms in irritable bowel syndrome patients: A R",
+      "query": "short bowel syndrome"
+    },
+    {
+      "recordId": "ictrp:TCTR20260506003",
+      "title": "Digital Depression Therapy with Supportive Assistants: An Examination of the Efficacy and Mechanisms",
+      "query": "SBS"
+    }
+  ],
+  "relevance": {
+    "rule": "① 标题/URL 命中 SBS 词 → 相关；② 精确关键词查出且标题无其他病种信号 → 相关但标 needsHumanReview；其余判噪声不入主表；本库为线索台账，不做入组资格或疗效判读（35 号）",
+    "terms": [
+      "short bowel",
+      "short-bowel",
+      "intestinal failure",
+      "intestinal rehabilitation",
+      "bowel resection",
+      "mesenteric",
+      "parenteral nutrition",
+      "home parenteral",
+      "teduglutide",
+      "glepaglutide",
+      "glucagon-like peptide-2",
+      "glp-2",
+      "短肠",
+      "肠衰竭",
+      "肠康复",
+      "肠外营养",
+      "替度格鲁肽",
+      "sbs/hp（词边界匹配）"
+    ],
+    "droppedNotSBS": 219,
+    "droppedSample": [
+      "A Multicenter, Open-label, Proof of Concept Phase II Aiming to Assess ",
+      "A Phase 1, Multi-Center, Open-Label Study Evaluating IBI3028 Treatment",
+      "A Phase 1, Multicenter, Open-label, Dose-escalation and Dose-expansion",
+      "A Phase 1/1b/2 Study Evaluating the Safety, Tolerability, Pharmacokine",
+      "A Phase 2 Study of Bevacizumab, Erlotinib and Atezolizumab in Subjects"
+    ],
+    "caveat": "ctv 本地索引对长词组存在分词噪声（如 \"granulomatosis with polyangiitis\" 返回的多为含 phase/study 的无关条目；\"vasculitis\" 会带出大量肿瘤试验；短缩写 mpa/gpa/egpa 若不做词边界会误匹配 remodeling/renal 内部）。本包准入规则：标题/URL 命中 AAV 词，或精确关键词且标题无其他病种/治疗领域信号（后者标 needsHumanReview）。本轮结论：SBS 直接相关记录 0 条，入库项均为待人工确认。中文通道（chinadrugtrials/chictr_online/ictrp）本轮全部 DENIED/FAILED/NO_RESULTS，中文登记未取得，须下次重试——不得据此说\"中国无 SBS 相关试验\"。零命中只代表该来源本次未返回，不代表全球不存在（ctv 为本地子集索引，ICTRP 上游存在已知静默缺口）。"
+  },
+  "sourceStatusRows": 60,
+  "coverage": {
+    "counted": [
+      "chinadrugtrials",
+      "ctv",
+      "ictrp"
+    ],
+    "notCounted": [
+      {
+        "sourceId": "xyb_chinadrugtrials_archive",
+        "state": "NO_RESULTS"
+      },
+      {
+        "sourceId": "chictr_online",
+        "state": "FAILED"
+      },
+      {
+        "sourceId": "chictr_pancreatic_archive",
+        "state": "NEEDS_SETUP"
+      }
+    ],
+    "rule": "仅 SUCCESS / OK* 计入覆盖；FAILED / DENIED / NEEDS_SETUP / NO_RESULTS 一律不算\"已查过\"，不计覆盖（35 号纪律）"
+  },
+  "sourceStates": {
+    "chinadrugtrials": "SUCCESS",
+    "xyb_chinadrugtrials_archive": "NO_RESULTS",
+    "chictr_online": "FAILED",
+    "chictr_pancreatic_archive": "NEEDS_SETUP",
+    "ctv": "SUCCESS",
+    "ictrp": "SUCCESS"
+  },
+  "honesty": {
+    "offlineCorpora": "ChiCTR/CDE/CTV 离线语料仅胰腺癌覆盖；AAV 只依赖在线通道终态，见 source_statuses 表",
+    "statusWording": "登记 ≠ 有效 ≠ 安全 ≠ 可入组；状态一律\"登记状态，未核实\"",
+    "mergeRule": "仅同一登记号（NCT/ChiCTR/CDE 等）合并，其余并排保留来源",
+    "noMatchScore": "本数据包不产出任何数值匹配度；分层与三态由读模型按 35 号执行"
+  },
+  "files": {
+    "trials-2026.jsonl": {
+      "path": "trials-2026.jsonl",
+      "sha256": "1a0ce50c0ca6867292f62de2c50111366cf2f5c5cb6078c4a3adf580cc94564a",
+      "lines": 588
+    },
+    "sbs_trials_2026.sqlite": {
+      "path": "sbs_trials_2026.sqlite",
+      "sha256": "9d8679438fcd501f272d221e486ded784d66b390795b3f1520227f354df67b4b",
+      "trials": 588,
+      "sourceStatusRows": 60
+    }
+  }
+}

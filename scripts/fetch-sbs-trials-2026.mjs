@@ -339,7 +339,7 @@ async function main() {
       .map((e) => ({ recordId: e.recordId, title: String(e.rec.title ?? '').slice(0, 100), query: e.rec.__query })),
     relevance: {
       rule: '① 标题/URL 命中 SBS 词 → 相关；② 精确关键词查出且标题无其他病种信号 → 相关但标 needsHumanReview；其余判噪声不入主表；本库为线索台账，不做入组资格或疗效判读（35 号）',
-      terms: [...AAV_PHRASES, `${AAV_SHORT.join('/')}（词边界匹配）`],
+      terms: [...SBS_PHRASES, `${SBS_SHORT.join('/')}（词边界匹配）`],
       droppedNotSBS: dropped.length,
       droppedSample: dropped.slice(0, 5).map((e) => String(e.rec.title ?? '').slice(0, 70)),
       caveat: 'ctv 本地索引对长词组存在分词噪声（如 "granulomatosis with polyangiitis" 返回的多为含 phase/study 的无关条目；'
@@ -364,8 +364,8 @@ async function main() {
       noMatchScore: '本数据包不产出任何数值匹配度；分层与三态由读模型按 35 号执行'
     },
     files: {
-      jsonl: { path: 'trials-2026.jsonl', sha256: sha256(jsonlPath), lines: lines.length },
-      sqlite: { path: 'sbs_trials_2026.sqlite', sha256: sha256(dbPath), trials: dbCount, sourceStatusRows: statusRows }
+      'trials-2026.jsonl': { path: 'trials-2026.jsonl', sha256: sha256(jsonlPath), lines: lines.length },
+      'sbs_trials_2026.sqlite': { path: 'sbs_trials_2026.sqlite', sha256: sha256(dbPath), trials: dbCount, sourceStatusRows: statusRows }
     }
   };
   writeFileSync(join(OUT_DIR, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
@@ -408,7 +408,7 @@ node scripts/fetch-anca-trials-2026.mjs             # 重采并更新四件套
   writeFileSync(join(OUT_DIR, 'README.md'), readme);
 
   console.log(`\n✔ 四件套已写入 ${OUT_DIR}`);
-  console.log(`  records=${lines.length}  db=${dbCount}  statusRows=${statusRows}  丢弃(非AAV)=${dropped.length}`);
+  console.log(`  records=${lines.length}  db=${dbCount}  statusRows=${statusRows}  丢弃(非SBS)=${dropped.length}`);
   console.log(`  计覆盖来源：${covered.join(', ') || '（无）'}`);
   console.log(`  不计覆盖：${notCovered.map((x) => `${x.sourceId}:${x.state}`).join(', ') || '（无）'}`);
 }

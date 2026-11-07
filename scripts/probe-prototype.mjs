@@ -205,25 +205,31 @@ add('Q15-agent-draft协议', aiHref.startsWith('sbs:agent-draft'), aiHref.slice(
 const aiPrompt = decodeURIComponent(aiHref.split('prompt=')[1] || '');
 add('Q19-上下文无判定词', !/诊断|分级|预后|建议 you|疗效/.test(aiPrompt), `len=${aiPrompt.length}`);
 
-/* P1–P6 疾病概要 */
+/* P1–P6 疾病概要（v0.2.2 起走家族 DP 合同：.dp-overlay#disease-primer + data-dp=back/close） */
+/* L81 断言：DP 模块真挂载（不是只有按钮）——文件级 + DOM 级双重 */
+const dpWired = await page.evaluate(() => ({
+  overlayInDom: !!document.querySelector('.dp-overlay#disease-primer') || typeof window.DiseasePrimer === 'object',
+  dataReady: !!window.DISEASE_PRIMER && window.DISEASE_PRIMER.sections.length === 4,
+  ids: window.DISEASE_PRIMER ? window.DISEASE_PRIMER.sections.map((s) => s.id) : []
+}));
+add('L81-DP模块挂载', dpWired.overlayInDom && dpWired.dataReady && dpWired.ids.join(',') === 'definition,evidence,landscape,trend', JSON.stringify(dpWired.ids));
 await page.click('[data-primer-open]');
-await new Promise((r) => setTimeout((r), 120));
+await new Promise((r) => setTimeout((r), 150));
 const primer = await page.evaluate(() => {
-  const ov = document.querySelector('.primer-overlay');
-  const rect = ov.querySelector('.primer-panel').getBoundingClientRect();
-  const hist = history.length;
-  const secs = [...ov.querySelectorAll('.primer-body h3')].map((h) => h.textContent);
-  const srcs = ov.querySelectorAll('.primer-src').length;
-  const btns = ov.querySelectorAll('[data-primer-close]').length;
-  const backBtn = [...ov.querySelectorAll('[data-primer-close]')].some((b) => b.textContent === '返回');
-  return { open: ov.classList.contains('open'), vh: Math.round(rect.height / innerHeight * 100), secs, srcs, btns, backBtn, hist };
+  const ov = document.querySelector('.dp-overlay#disease-primer');
+  if (!ov) return { open: false };
+  const rect = ov.querySelector('.dp-panel').getBoundingClientRect();
+  const secs = [...ov.querySelectorAll('.dp-section')].map((s) => ({ id: s.dataset.dpSection, t: s.querySelector('h3')?.textContent.trim() }));
+  const srcs = ov.querySelectorAll('.dp-src').length;
+  const back = !!ov.querySelector('[data-dp="back"]');
+  const close = !!ov.querySelector('[data-dp="close"]');
+  return { open: ov.hidden === false && ov.classList.contains('dp-overlay'), vh: Math.round(rect.height / innerHeight * 100), secs, srcs, back, close, nonEmpty: secs.every((s) => s.t) };
 });
-add('P2/P3-四段+整页', primer.open && primer.secs.length === 4 && primer.vh >= 90, `vh=${primer.vh} secs=${primer.secs.join('/')} srcs=${primer.srcs}`);
-add('P5-双出口', primer.btns === 3 && primer.backBtn, `close entries=${primer.btns} back=${primer.backBtn}`);
-const focusBefore = await page.evaluate(() => document.activeElement.className);
+add('P2/P3-四段+整页', primer.open && primer.secs.length === 4 && primer.vh >= 90 && primer.nonEmpty, `vh=${primer.vh} secs=${primer.secs.map((s) => s.id).join('/')} srcs=${primer.srcs}`);
+add('P5-双出口', primer.back && primer.close, `back=${primer.back} close=${primer.close}`);
 await page.keyboard.press('Escape');
-const afterEsc = await page.evaluate(() => ({ open: document.querySelector('.primer-overlay').classList.contains('open'), focus: document.activeElement.getAttribute('data-primer-open') !== null || document.activeElement.className }));
-add('P7-焦点归还', !afterEsc.open, `closed=${!afterEsc.open}`);
+const afterEsc = await page.evaluate(() => ({ open: window.DiseasePrimer.isOpen(), focusOk: !!document.activeElement && (document.activeElement.getAttribute('data-primer-open') !== null || document.activeElement.closest('[data-primer-open]') !== null) }));
+add('P7-焦点归还', !afterEsc.open && afterEsc.focusOk, `closed=${!afterEsc.open} focusOk=${afterEsc.focusOk}`);
 
 /* Q6 字号与页脚贴底 */
 const font = await page.$eval('body', (b) => getComputedStyle(b).fontSize);

@@ -2,14 +2,14 @@
 /* 小养宝 NutriPal v0.2.0 — 短肠综合征工作台（开发版页面，public/ 随包发出）。
    与 prototypes/v0.2/app.js（G2 签认的原型基准）的差异全部包在
    "DEV-BRIDGE-BEGIN … DEV-BRIDGE-END" 注释对里（ui-parity 白名单按这对标记登记）：
-   1) APP_INFO 版本从 /api/short-bowel/bootstrap 取，拿不到回退 0.2.1 演示态并标注「未连接服务」；
+   1) APP_INFO 版本从 /api/short-bowel/bootstrap 取，拿不到回退 0.2.2 演示态并标注「未连接服务」；
    2) apiBase()/loadBootstrap()/applyData()：iframe 与独立打开（file://）双形态；
    3) sbs:agent-draft 链接：iframe 内 postMessage 给外壳，独立打开保留演示弹窗；
    4) MinerU 六部件：设置 Token UI / settings API / 上传解析 / 状态 / 降级 / 指引；
    5) 启动顺序：先取数据再 render。视图函数与原型逐行一致（不在 DEV-BRIDGE 对里的不许改）。 */
 
 /* DEV-BRIDGE-BEGIN:app-info */
-const APP_INFO = { version: '0.2.1', build: '2026-11-08', channel: 'prototype', channelLabel: '交互原型 · 未接入 DSH' };
+const APP_INFO = { version: '0.2.2', build: '2026-11-08', channel: 'prototype', channelLabel: '交互原型 · 未接入 DSH' };
 /* DEV-BRIDGE-END:app-info */
 
 const $ = (s, root = document) => root.querySelector(s);

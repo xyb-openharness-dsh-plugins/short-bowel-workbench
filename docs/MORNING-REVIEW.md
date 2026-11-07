@@ -38,3 +38,11 @@
 
 - **未验证**：V3 真机业务闭环；真机截图（Q30）；真实数据导入（无资料目录）；MinerU 真实解析（未接 Token，六部件桩件+契约测试过）；NMPA 在线核验（官网 412 反爬，替度格鲁肽获批状态标【待核】）； ClinicalTrials 中文三通道（chictr_online FAILED、两个中文归档 NO_RESULTS——如实记 FAILED，不写零结果）。
 - **异常**：①本机直连 GitHub 超时，全程走 127.0.0.1:7890 代理；②子代理并发受限（user concurrency limit），三路调研改串行；③一次误覆盖 public/app.js（L78 教训已回流）与一次升版半途连环红（L80），均已修复并有测试护栏；④audit 1 待人工（primer trend 段禁词审计器不解析 points 结构，内容已人工核）。
+
+## 晨间追记（2026-11-08 08:00 前复核，用户点名项）
+
+- **「?」按钮 ≠ DP 模块**：复核发现 v0.2.1 的疾病概要是自造 `.primer-overlay` 面板——按钮在、能打开、仓内探针过，但**不符合家族探针合同**（.dp-overlay#disease-primer 系），家族 probe-disease-primer 打过来必挂（正是用户点名的家族两连坑）。
+- **修复（v0.2.2）**：换装 starter `assets/patterns/disease-primer.{js,css}` 家族模块；primer-data 重写为 DP 数据合同（brand/name/en/updated + 四段 definition/evidence/landscape/trend，sources 带 https 深链，L1/L3 拦裸域名首页 2 处已修）。
+- **验收**：家族探针 `--url http://127.0.0.1:8177/v0.2/index.html` 显式打本仓原型 → **10/10 全过**；仓内探针 39/39（新增 L81-DP模块挂载 DOM 级断言）；check 0 ✗ / test 49/49 / audit 0 失败。
+- **回流**：starter L81 + rc.24（本地 477937b+1，未推送）。
+- **异常**：v0.2.2 push 连续 SSL_ERROR_SYSCALL（代理上游），重试 3 次未成功，commit 80adbe5 本地待推。

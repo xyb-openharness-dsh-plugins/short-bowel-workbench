@@ -3,7 +3,7 @@
    全部数据为合成示例（demo-data.js 唯一源）；不读写真实文件、不调用模型或宿主 API。
    结构基准：小粉宝 v0.4（外壳/指标卡/最近报告表）+ 小橙宝 v0.2（导航分组/泳道/折叠卡）；病种语义全部为 SBS。 */
 
-const APP_INFO = { version: '0.2.2', build: '2026-11-08', channel: 'prototype', channelLabel: '交互原型 · 未接入 DSH' };
+const APP_INFO = { version: '0.2.3', build: '2026-11-08', channel: 'prototype', channelLabel: '交互原型 · 未接入 DSH' };
 
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => Array.from(root.querySelectorAll(s));

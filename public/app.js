@@ -9,7 +9,7 @@
    5) 启动顺序：先取数据再 render。视图函数与原型逐行一致（不在 DEV-BRIDGE 对里的不许改）。 */
 
 /* DEV-BRIDGE-BEGIN:app-info */
-const APP_INFO = { version: '0.2.2', build: '2026-11-08', channel: 'prototype', channelLabel: '交互原型 · 未接入 DSH' };
+const APP_INFO = { version: '0.2.3', build: '2026-11-08', channel: 'prototype', channelLabel: '交互原型 · 未接入 DSH' };
 /* DEV-BRIDGE-END:app-info */
 
 const $ = (s, root = document) => root.querySelector(s);
